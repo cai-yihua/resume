@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yi-Hua Cai | AI-RAN &amp; AI Agent Systems</title>
+    <title>Yi-Hua Cai (Jessi) | AI-RAN &amp; AI Agent Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 bg-white border-b border-gray-100 z-50 no-print">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-medium">Yi-Hua Cai</span>
+            <span class="font-medium">Yi-Hua Cai (Jessi)</span>
             <div class="flex gap-6 text-sm">
                 <a href="resume_zh.html" class="text-gray-500 hover:text-black transition-colors">中文</a>
                 <a href="mailto:jess92725@gmail.com" class="text-gray-500 hover:text-black transition-colors">Contact</a>
@@ -44,7 +44,7 @@
                 <div>
                     <span class="text-sm text-gray-400 uppercase tracking-widest">AI-RAN / O-RAN · AI Agent System Design</span>
                     <h1 class="text-5xl font-bold tracking-tight leading-tight mt-3 mb-5">
-                        Yi-Hua Cai
+                        Yi-Hua Cai <span class="text-3xl font-medium text-gray-400">(Jessi)</span>
                     </h1>
                     <p class="text-lg text-gray-600 max-w-2xl leading-relaxed">
                         M.S. student in Electronic Engineering at National Taiwan University of Science and Technology, focused on <span class="text-black font-medium">AI-RAN / O-RAN intelligent networks</span> and <span class="text-black font-medium">AI Agent system design</span>. Current research: getting AI agents to read high-level network intent and produce control strategies deployable on a Near-RT RIC, verified in a digital twin before they reach the live network. Core developer on ITRI commissioned research and NSTC projects, with two industry summer internships.
@@ -102,7 +102,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
                     <div>
                         <h4 class="text-2xl font-semibold">Intelligent Strategy Generation for Intent-Based Resilient Networks</h4>
-                        <p class="text-gray-400 mt-1">ITRI commissioned research — conducted at NTUST</p>
+                        <p class="text-gray-400 mt-1">ITRI commissioned research</p>
                     </div>
                     <span class="text-sm text-gray-500 whitespace-nowrap">Apr 2026 - Dec 2026 (ongoing)</span>
                 </div>
@@ -111,17 +111,17 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">End-to-End xApp Generation</h5>
-                        <p class="text-gray-400 text-sm mb-3">High-level network intent in, a control application deployable on a Near-RT RIC out. The workflow spans problem diagnosis, strategy design and code generation, with a structured contract at each hand-off; when any stage cannot classify confidently the chain stops rather than passing a wrong diagnosis downstream</p>
+                        <p class="text-gray-400 text-sm mb-3">High-level network intent in, a control application deployable on a Near-RT RIC out. The workflow spans problem diagnosis, strategy design and code generation, with a structured contract at each hand-off; when a stage cannot classify confidently the chain stops, so downstream always receives a confirmed diagnosis</p>
                         <p class="text-sm"><span class="text-green-400">Outcome:</span> Phase 1 delivered on schedule in Jul 2026</p>
                     </div>
                     <div class="border border-gray-700 p-5">
-                        <h5 class="font-medium mb-2">Digital Twin Verification Platform</h5>
-                        <p class="text-gray-400 text-sm mb-3">Built the xApp lifecycle control platform (Django + PostgreSQL) governing both the real and the digital twin O-RAN RIC clusters. A strategy is deployed to the twin first and evaluated against KPM metrics; only once it meets the goals set up front does it reach the live network</p>
+                        <h5 class="font-medium mb-2">Verification Before Going Live</h5>
+                        <p class="text-gray-400 text-sm mb-3">Built the xApp lifecycle control platform governing both the real and the digital twin O-RAN RIC clusters, and integrated the digital twin simulation environment: a strategy is deployed to the twin and evaluated against KPM, and reaches the live network once it meets the goals set up front</p>
                         <p class="text-sm"><span class="text-green-400">Outcome:</span> Scheduling decisions verified before they go live</p>
                     </div>
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">Making LLM Output Dependable</h5>
-                        <p class="text-gray-400 text-sm mb-3">Built the verification scheme around what runtime can actually decide — is the structure valid, will downstream run it — and moved judgments that need ground truth into offline scoring against a golden dataset, which then tells us whether to fix the prompt or the scope</p>
+                        <p class="text-gray-400 text-sm mb-3">Built output checking with an automated iteration loop: format and specification checks on the generated output feed back into the prompt producing the xApp strategy, so quality converges round over round</p>
                         <p class="text-sm"><span class="text-green-400">Outcome:</span> Audited the triggers of 27 reruns; 52% traced to three checks later judged to be testing the wrong thing, and removed</p>
                     </div>
                     <div class="border border-gray-700 p-5">
@@ -136,19 +136,19 @@
             <div class="mb-16">
                 <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
                     <div>
-                        <h4 class="text-2xl font-semibold">Technical Lead &amp; Documentation Architect</h4>
-                        <p class="text-gray-400 mt-1">NSTC 6G Forward-Looking Program, "Open Optical/Wireless Integrated Prototype System (3/4)" — Subproject 2: AI/ML Intelligent Platform</p>
+                        <h4 class="text-2xl font-semibold">6G Forward-Looking Program — Subproject 2: AI/ML Intelligent Platform</h4>
+                        <p class="text-gray-400 mt-1">NSTC "Open Optical/Wireless Integrated Prototype System (3/4)" · Documentation alignment and development process</p>
                     </div>
                     <span class="text-sm text-gray-500 whitespace-nowrap">May 2025 - Jul 2026</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">Documentation Alignment &amp; Automated Analysis</h5>
-                        <p class="text-gray-400 text-sm">For a large-scale project spanning 3-4 years, replanned User Stories / Use Cases to align scattered documentation with the codebase. Developed Python scripts that automatically extract modular objects, analyze inter-object relationships and generate sequence diagrams, replacing manual tracing</p>
+                        <p class="text-gray-400 text-sm">For a large-scale project spanning 3-4 years, replanned the Use Cases to align scattered documentation with the codebase. Developed Python scripts that extract modular objects, analyze inter-object relationships and generate sequence diagrams, letting engineers pinpoint a suspect flow directly and speeding up flow-level debugging</p>
                     </div>
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">CI/CD Planning &amp; Knowledge Transfer</h5>
-                        <p class="text-gray-400 text-sm">Redesigned CI/CD workflow specifications (targeting GitLab automation), establishing comprehensive documentation for future maintainers. Deepened K8s knowledge and integrated it with OS-level fundamentals to meet deployment requirements</p>
+                        <p class="text-gray-400 text-sm">Redesigned the CI/CD workflow standard and cleaned up outdated configuration and data in the existing environment (Harbor registry, GitLab projects), leaving a clean base for rollout; wrote documentation future maintainers can work from, and deepened K8s and OS-level knowledge to meet deployment requirements</p>
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                     </div>
                     <span class="text-sm text-gray-500 whitespace-nowrap">Mar 2025 - Jan 2026</span>
                 </div>
-                <p class="text-gray-400 text-sm mb-2 max-w-4xl"><a href="https://github.com/cai-yihua/ITRI-Intent-Based" class="underline hover:text-white transition-colors">github.com/cai-yihua/ITRI-Intent-Based</a> — released under Apache-2.0</p>
+                <p class="text-gray-400 text-sm mb-2 max-w-4xl"><a href="https://github.com/cai-yihua/ITRI-Intent-Based" class="underline hover:text-white transition-colors">github.com/cai-yihua/ITRI-Intent-Based</a></p>
                 <p class="text-gray-400 text-sm mb-2 max-w-4xl">The system follows the 3GPP intent model (Intent → IntentExpectation → ExpectationTarget, scoped by Context), turning "what should be achieved" into quantifiable targets that an execution engine issues to the SMO, with closed-loop monitoring to confirm the targets are met; intent translation is driven by an LLM.</p>
                 <p class="text-gray-400 text-sm mb-6 max-w-4xl">Joined mid-project on a codebase established by 3 senior members, later independently responsible for release management, deployment and system integration, documentation deliverables, system maintenance and external technical coordination.</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -196,9 +196,9 @@
                         <p class="text-sm"><span class="text-green-400">Impact:</span> Structured input in place of trial and error; carried forward into this year's program</p>
                     </div>
                     <div class="border border-gray-700 p-5">
-                        <h5 class="font-medium mb-2">Release Management &amp; Open-Source Compliance</h5>
-                        <p class="text-gray-400 text-sm mb-3">Split Backend / Dashboard into git submodules with a version-to-milestone table recording the tag of the main repository and both submodules alongside every change; audited all third-party licenses and published under Apache-2.0</p>
-                        <p class="text-sm"><span class="text-green-400">Impact:</span> 12 releases between May 2025 and Jan 2026 (v1.0 → v4.1)</p>
+                        <h5 class="font-medium mb-2">Release &amp; Change Records</h5>
+                        <p class="text-gray-400 text-sm mb-3">Split Backend / Dashboard into git submodules with a version-to-milestone table recording the versions of the main repository and its submodules alongside every change, and audited all third-party licenses</p>
+                        <p class="text-sm"><span class="text-green-400">Impact:</span> Every version's scope and changes stay traceable</p>
                     </div>
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">Time-Series Anomaly Detection</h5>
@@ -224,7 +224,7 @@
                     </div>
                     <div class="md:col-span-9">
                         <h4 class="text-xl font-semibold">Orion Technology</h4>
-                        <p class="text-gray-600 mt-1">Summer intern — O-RAN platform deployment and ML model rollout</p>
+                        <p class="text-gray-600 mt-1">Summer intern — O-RAN platform deployment, and exposure to indoor positioning technology</p>
                         <p class="text-gray-500 text-sm mt-2">Two consecutive summers (Jul 1 - Aug 31 each year)</p>
                     </div>
                 </div>
@@ -269,8 +269,8 @@
                         <span class="text-xs text-gray-400">Dec 2025 - Jul 2026</span>
                     </div>
                     <h4 class="text-lg font-semibold mt-2 mb-3">Healthcare Management System</h4>
-                    <p class="text-gray-600 text-sm mb-4">Defect fixing and ongoing maintenance. Introduced an AI Agent as the support interface, wrapping the system's existing commands as agent-callable tools so users trigger operations in natural language — without adding an API endpoint or a frontend page for every request; wired a Telegram Bot entry point via OpenClaw, a self-hosted open-source AI assistant</p>
-                    <p class="text-sm font-medium">Agent-routed commands instead of one-off APIs and UI</p>
+                    <p class="text-gray-600 text-sm mb-4">Defect fixing and ongoing maintenance. Introduced an AI Agent as the support interface, composing the system's existing API commands into agent-callable tools so users complete queries and operations in natural language, opening a faster route for common tasks; wired a Telegram Bot entry point via OpenClaw, a self-hosted open-source AI assistant</p>
+                    <p class="text-sm font-medium">Agent-composed commands speed up common tasks</p>
                 </div>
                 <div class="border border-gray-300 p-6 hover:border-black transition-colors bg-white">
                     <div class="flex justify-between items-baseline">
@@ -296,7 +296,7 @@
                         <span class="text-xs text-gray-400">Jun - Aug 2024</span>
                     </div>
                     <h4 class="text-lg font-semibold mt-2 mb-3">Shopify Theme System</h4>
-                    <p class="text-gray-600 text-sm mb-4">Overseas practicum under the Ministry of Education's Dream-Building program. Theme templates for Shopify merchants, configurable after purchase: React rendering the storefront against Shopify, TypeScript for backend functionality, RESTful APIs to submit order data; added a subscription-box feature letting shoppers choose products freely while merchants set box limits by their own criteria</p>
+                    <p class="text-gray-600 text-sm mb-4">Overseas practicum under the MOE Overseas Internship Program. Theme templates for Shopify merchants, configurable after purchase: React rendering the storefront against Shopify, TypeScript for backend functionality, RESTful APIs to submit order data; added a subscription-box feature letting shoppers choose products freely while merchants set box limits by their own criteria</p>
                     <p class="text-sm font-medium">Modular e-commerce theme components</p>
                 </div>
             </div>
@@ -330,7 +330,7 @@
                         <li>Prompt Engineering (CoT, Least-to-Most)</li>
                         <li>RAG, LLM APIs, Dify, n8n</li>
                         <li>Model containerization, CI/CD automation</li>
-                        <li>Agent evaluation (golden dataset, scoring)</li>
+                        <li>Agent output checking and iteration</li>
                         <li>A2A agent communication protocol</li>
                     </ul>
                 </div>
@@ -339,7 +339,7 @@
                     <ul class="text-sm text-gray-600 space-y-2">
                         <li>Software and microservice architecture</li>
                         <li>Technical documentation governance</li>
-                        <li>User Story / Use Case planning</li>
+                        <li>Use Case planning</li>
                         <li>PlantUML / Draw.io / Mermaid modeling</li>
                         <li>API specifications, deployment manuals</li>
                     </ul>
@@ -399,7 +399,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-300 pt-8">
                     <div class="md:col-span-3">
                         <h4 class="font-semibold">Calculus Teaching Assistant</h4>
-                        <span class="text-sm text-gray-500">Sep 2025 - Jan 2026</span>
+                        <span class="text-sm text-gray-500">Feb - Jun 2025</span>
                     </div>
                     <div class="md:col-span-9">
                         <p class="text-gray-600 text-sm leading-relaxed">Led problem sessions, clarified concepts and ran office hours. Established standardized grading rubrics before assessment, improving efficiency and consistency while developing the ability to simplify and communicate complex concepts.</p>
@@ -428,7 +428,7 @@
             <div class="space-y-10">
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
                     <div class="md:col-span-3">
-                        <span class="text-sm text-gray-500">Sep 2025 - Expected Jan 2027</span>
+                        <span class="text-sm text-gray-500">Feb 2025 - Expected Feb 2027</span>
                     </div>
                     <div class="md:col-span-9">
                         <h4 class="text-xl font-semibold">National Taiwan University of Science and Technology</h4>
@@ -438,7 +438,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-200 pt-8">
                     <div class="md:col-span-3">
-                        <span class="text-sm text-gray-500">Sep 2021 - Jun 2025</span>
+                        <span class="text-sm text-gray-500">Sep 2021 - Jan 2025</span>
                     </div>
                     <div class="md:col-span-9">
                         <h4 class="text-xl font-semibold">National Taiwan University of Science and Technology</h4>
@@ -446,7 +446,7 @@
                         <ul class="text-gray-500 text-sm mt-2 space-y-1">
                             <li>Student association: Treasurer, Electronic Engineering Student Association (AY 112)</li>
                             <li>On-campus work-study: official correspondence, office administration, industry-academia system operation, guest reception</li>
-                            <li>Extracurricular: NTUST Youth Action Forum; Tsung Te volunteer club (character &amp; science camp, Tainan Xinying); NTUST Electronics Camp student-life group staff; Ministry of Education Dream-Building overseas program</li>
+                            <li>Extracurricular: NTUST Youth Action Forum; Tsung Te volunteer club (character &amp; science camp, Tainan Xinying); NTUST Electronics Camp student-life group staff; MOE Overseas Internship Program</li>
                         </ul>
                     </div>
                 </div>
@@ -476,8 +476,8 @@
                     <h4 class="text-sm text-gray-400 uppercase tracking-widest mb-6">Honors &amp; Competitions</h4>
                     <ul class="text-sm text-gray-600 space-y-3">
                         <li>2026 1st NTUST Youth Entrepreneurship Hackathon — participant (FairWinds)</li>
-                        <li>2024 TANET Taiwan Academic Network Conference — poster paper accepted</li>
-                        <li>2024 MediaTek "Smart Hometown" Digital Social Innovation Competition — participant</li>
+                        <li>Poster paper accepted, TANET 2024</li>
+                        <li>MediaTek "Genius for Home" digital social innovation competition — participant, 2024</li>
                         <li>Dean's List, AY 110-1 and AY 110-2</li>
                         <li>Ming-Wei Corporate Scholarship, AY 110-2</li>
                         <li>9th place, Industrial Electronics, National Skills Competition (AY 109)</li>
@@ -487,7 +487,7 @@
                     <h4 class="text-sm text-gray-400 uppercase tracking-widest mb-6">Language</h4>
                     <ul class="text-sm text-gray-600 space-y-3">
                         <li>TOEIC Listening &amp; Reading 670 (May 2024)</li>
-                        <li>CEFR B1+ listening &amp; reading (May 2024)</li>
+                        <li>BESTEP (BEST English Proficiency Test) B1+, listening &amp; reading (2024)</li>
                         <li>TOEIC Speaking &amp; Writing 260 (Jun 2022)</li>
                     </ul>
                 </div>

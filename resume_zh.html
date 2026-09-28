@@ -78,7 +78,7 @@
                 <div>
                     <span class="text-sm text-gray-400 uppercase tracking-widest">02</span>
                     <h2 class="text-xl font-semibold mt-2 mb-3">AI Agent 系統設計</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">設計多階段 Agent 工作流與工具調用契約，讓大型語言模型穩定產出可編譯、可部署的程式碼；並以黃金資料集評測結果回推 prompt 與功能劃分的修正。</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">設計多階段 Agent 工作流與工具調用契約，讓大型語言模型穩定產出可編譯、可部署的程式碼；並以產出檢查的結果回推 prompt 與功能劃分的修正。</p>
                 </div>
                 <div>
                     <span class="text-sm text-gray-400 uppercase tracking-widest">03</span>
@@ -102,7 +102,7 @@
                 <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
                     <div>
                         <h4 class="text-2xl font-semibold">意圖式韌性組網之智能生成策略</h4>
-                        <p class="text-gray-400 mt-1">工業技術研究院 (ITRI) 委託研究 — 台科大承接</p>
+                        <p class="text-gray-400 mt-1">工業技術研究院 (ITRI) 委託研究</p>
                     </div>
                     <span class="text-sm text-gray-500 whitespace-nowrap">2026/04 - 2026/12（進行中）</span>
                 </div>
@@ -111,22 +111,22 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">端到端 xApp 自動生成</h5>
-                        <p class="text-gray-400 text-sm mb-3">輸入高階網路意圖，輸出可部署於 Near-RT RIC 的控制應用程式。工作流涵蓋問題診斷、策略設計與程式碼生成三段，每段之間以結構化契約交接，任一段判斷不明確就中止，不讓錯誤分類往下游傳</p>
+                        <p class="text-gray-400 text-sm mb-3">輸入高階網路意圖，輸出可部署於 Near-RT RIC 的控制應用程式。工作流涵蓋問題診斷、策略設計與程式碼生成三段，每段之間以結構化契約交接；任一段判斷不明確即中止，確保下游接手的是已確認的分類</p>
                         <p class="text-sm"><span class="text-green-400">成果：</span>2026/07 如期完成第一階段交付</p>
                     </div>
                     <div class="border border-gray-700 p-5">
-                        <h5 class="font-medium mb-2">數位雙生驗證平台</h5>
-                        <p class="text-gray-400 text-sm mb-3">自行開發 xApp 生命週期控制平台（Django + PostgreSQL），同時管理實體與數位雙生兩套 O-RAN RIC 叢集。策略先在雙生環境部署、取 KPM 指標推演，達到當初設定的目標才下發實網</p>
+                        <h5 class="font-medium mb-2">策略上線前的雙生驗證</h5>
+                        <p class="text-gray-400 text-sm mb-3">自行開發 xApp 生命週期控制平台，同時管理實體與數位雙生兩套 O-RAN RIC 叢集；並串接數位雙生模擬環境，策略先在雙生部署、取 KPM 指標推演，達到當初設定的目標才下發實網</p>
                         <p class="text-sm"><span class="text-green-400">成果：</span>網路調度決策可先驗證再上線</p>
                     </div>
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">讓 LLM 的產出穩定可用</h5>
-                        <p class="text-gray-400 text-sm mb-3">建立生成結果的驗證機制：執行時只檢查「格式正確」與「下游跑不跑得動」，需要標準答案的判斷改以黃金資料集離線評分，再依評分報告回推該改 prompt 還是改功能劃分</p>
+                        <p class="text-gray-400 text-sm mb-3">建立產出檢查與自動迭代機制：執行時檢查產出的格式與規格符合度，並以檢查結果回頭調整生成策略的 prompt，讓 xApp 產出品質逐輪收斂</p>
                         <p class="text-sm"><span class="text-green-400">成果：</span>盤點 27 次重跑的觸發來源，其中 52% 來自三條後來判定「驗錯東西」的檢查，已移除</p>
                     </div>
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">用量測決定要改什麼</h5>
-                        <p class="text-gray-400 text-sm mb-3">以封存的 137 筆執行紀錄量測端到端耗時（15–35 分鐘）與各段分佈，先確認瓶頸落在哪一段再動手，而不是憑感覺調整</p>
+                        <p class="text-gray-400 text-sm mb-3">以封存的 137 筆執行紀錄量測端到端耗時（15–35 分鐘）與各段分佈，先確認瓶頸落在哪一段，再據此決定要改什麼</p>
                         <p class="text-sm"><span class="text-green-400">成果：</span>量到一個推論快取失效每輪多付 16.8% 成本並修正設定；改造後的端到端時間正在重新量測</p>
                     </div>
                 </div>
@@ -136,19 +136,19 @@
             <div class="mb-16">
                 <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
                     <div>
-                        <h4 class="text-2xl font-semibold">技術負責人與文件架構師</h4>
-                        <p class="text-gray-400 mt-1">國科會 6G 前瞻計畫「開放式光/無線整合雛型系統 (3/4)」— 子計畫二：AI/ML 智能平台</p>
+                        <h4 class="text-2xl font-semibold">6G 前瞻計畫 — 子計畫二：AI/ML 智能平台</h4>
+                        <p class="text-gray-400 mt-1">國科會「開放式光／無線整合雛型系統 (3/4)」．文件對齊與開發流程規範</p>
                     </div>
                     <span class="text-sm text-gray-500 whitespace-nowrap">2025/05 - 2026/07</span>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">文件對齊與自動化分析</h5>
-                        <p class="text-gray-400 text-sm">針對歷時 3-4 年的大型專案，重新規劃 User Story / Use Case，將散亂文件與程式碼對齊。開發 Python 腳本自動抓取模組化物件並分析物件間關係，自動生成時序圖，取代人工逐一追蹤</p>
+                        <p class="text-gray-400 text-sm">針對歷時 3-4 年的大型專案，重新規劃 Use Case，將散亂文件與程式碼對齊。開發 Python 腳本自動抓取模組化物件並分析物件間關係、生成時序圖，讓工程師能直接從圖上鎖定可疑流程，加速流程層級的除錯</p>
                     </div>
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">CI/CD 規劃與知識傳承</h5>
-                        <p class="text-gray-400 text-sm">重新設計 CI/CD 工作流規範（目標整合 GitLab 自動化），建立完整文件讓後續維護者可快速理解全貌。因部署需求深入學習 K8s 並與 OS 底層知識整合</p>
+                        <p class="text-gray-400 text-sm">重新設計 CI/CD 工作流規範，並清理既有環境中過時的設定與資料（Harbor 映像倉庫、GitLab 專案），為後續導入留下乾淨的基礎；建立完整文件讓後續維護者可快速理解全貌，並因部署需求深入 K8s 與 OS 底層知識</p>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@
                     </div>
                     <span class="text-sm text-gray-500 whitespace-nowrap">2025/03 - 2026/01</span>
                 </div>
-                <p class="text-gray-400 text-sm mb-2 max-w-4xl"><a href="https://github.com/cai-yihua/ITRI-Intent-Based" class="underline hover:text-white transition-colors">github.com/cai-yihua/ITRI-Intent-Based</a> — 開源釋出（Apache-2.0）</p>
+                <p class="text-gray-400 text-sm mb-2 max-w-4xl"><a href="https://github.com/cai-yihua/ITRI-Intent-Based" class="underline hover:text-white transition-colors">github.com/cai-yihua/ITRI-Intent-Based</a> </p>
                 <p class="text-gray-400 text-sm mb-2 max-w-4xl">系統依 3GPP 意圖模型（Intent → IntentExpectation → ExpectationTarget，搭配 Context 限定生效範圍），把「要達成什麼」的高階需求轉成可量化目標，再由意圖執行引擎下發 SMO，並以閉環監控驗證是否達標；意圖轉譯以 LLM 為核心技術。</p>
                 <p class="text-gray-400 text-sm mb-6 max-w-4xl">中途加入由 3 位學長建立的專案，後期獨立負責專案版本管理、部署與系統整合、文件交付、系統維護與對外技術對接。主動提出架構優化方案，職責轉換期先規劃再討論確認方向。</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -197,9 +197,9 @@
                         <p class="text-sm"><span class="text-green-400">成效：</span>以結構化輸入取代反覆試誤，後續沿用到今年度計畫</p>
                     </div>
                     <div class="border border-gray-700 p-5">
-                        <h5 class="font-medium mb-2">版本發佈與開源合規</h5>
-                        <p class="text-gray-400 text-sm mb-3">以 git submodule 拆分 Backend / Dashboard 多倉庫結構，建立版本－里程碑對應表，逐版記錄主倉庫與兩個子模組的 tag 及變動項目；盤點全部第三方套件授權並以 Apache-2.0 對外釋出</p>
-                        <p class="text-sm"><span class="text-green-400">成效：</span>2025/05 - 2026/01 共發佈 12 個版本（v1.0 → v4.1）</p>
+                        <h5 class="font-medium mb-2">版本與變更紀錄管理</h5>
+                        <p class="text-gray-400 text-sm mb-3">以 git submodule 拆分 Backend / Dashboard 多倉庫結構，建立版本－里程碑對應表，逐版記錄主倉庫與子模組的版本及變更項目，並盤點全部第三方套件授權</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>每一版的功能範圍與變更項目皆可追溯</p>
                     </div>
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">時序網路異常偵測</h5>
@@ -225,7 +225,7 @@
                     </div>
                     <div class="md:col-span-9">
                         <h4 class="text-xl font-semibold">獵戶科技</h4>
-                        <p class="text-gray-600 mt-1">暑期實習 — O-RAN 平台部署與機器學習模型上線流程</p>
+                        <p class="text-gray-600 mt-1">暑期實習 — O-RAN 平台部署，並了解室內定位技術</p>
                         <p class="text-gray-500 text-sm mt-2">連續兩年暑期實習（每年 7/1 - 8/31）</p>
                     </div>
                 </div>
@@ -270,8 +270,8 @@
                         <span class="text-xs text-gray-400">2025/12 - 2026/07</span>
                     </div>
                     <h4 class="text-lg font-semibold mt-2 mb-3">醫療管理系統</h4>
-                    <p class="text-gray-600 text-sm mb-4">協助修改錯誤與系統維運。導入 AI Agent 作為客服介面，把系統既有指令包成 agent 可調用的工具，使用者以自然語言即可觸發操作——不需要為每個需求新增 API 或前端頁面；並以 OpenClaw（開源自架 AI 助理）串接 Telegram Bot 作為指令入口</p>
-                    <p class="text-sm font-medium">以 Agent 串接指令，取代逐一開 API 與前端</p>
+                    <p class="text-gray-600 text-sm mb-4">協助修改錯誤與系統維運。導入 AI Agent 作為客服介面，把系統既有的 API 指令組合成 agent 可調用的工具，使用者以自然語言描述需求即可完成查詢與操作，為常用任務開出一條更快的入口；並以 OpenClaw（開源自架 AI 助理）串接 Telegram Bot 作為指令入口</p>
+                    <p class="text-sm font-medium">以 Agent 組合既有指令，加快常用任務</p>
                 </div>
                 <div class="border border-gray-300 p-6 hover:border-black transition-colors bg-white">
                     <div class="flex justify-between items-baseline">
@@ -331,7 +331,7 @@
                         <li>Prompt Engineering（CoT, Least-to-Most）</li>
                         <li>RAG、LLM APIs、Dify、n8n</li>
                         <li>模型容器化封裝、CI/CD 部署自動化</li>
-                        <li>Agent 評測（黃金資料集、評分架構）</li>
+                        <li>Agent 產出檢查與迭代優化</li>
                         <li>A2A agent 溝通協定</li>
                     </ul>
                 </div>
@@ -340,7 +340,7 @@
                     <ul class="text-sm text-gray-600 space-y-2">
                         <li>軟體與微服務架構設計</li>
                         <li>系統技術文件規範管理</li>
-                        <li>User Story / Use Case 規劃</li>
+                        <li>Use Case 規劃</li>
                         <li>PlantUML / Draw.io / Mermaid 建模</li>
                         <li>API 規格書與部署手冊</li>
                     </ul>
@@ -400,7 +400,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-300 pt-8">
                     <div class="md:col-span-3">
                         <h4 class="font-semibold">微積分助教</h4>
-                        <span class="text-sm text-gray-500">2025/09 - 2026/01</span>
+                        <span class="text-sm text-gray-500">2025/02 - 2025/06</span>
                     </div>
                     <div class="md:col-span-9">
                         <p class="text-gray-600 text-sm leading-relaxed">負責習題講解、觀念釐清與課後輔導。建立標準化評分規範後再批改，提升效率與一致性，培養將複雜概念簡化輸出的教學能力。</p>
@@ -429,7 +429,7 @@
             <div class="space-y-10">
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
                     <div class="md:col-span-3">
-                        <span class="text-sm text-gray-500">2025/09 - 預計 2027/01</span>
+                        <span class="text-sm text-gray-500">2025/02 - 預計 2027/02</span>
                     </div>
                     <div class="md:col-span-9">
                         <h4 class="text-xl font-semibold">國立臺灣科技大學</h4>
@@ -439,7 +439,7 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-200 pt-8">
                     <div class="md:col-span-3">
-                        <span class="text-sm text-gray-500">2021/09 - 2025/06</span>
+                        <span class="text-sm text-gray-500">2021/09 - 2025/01</span>
                     </div>
                     <div class="md:col-span-9">
                         <h4 class="text-xl font-semibold">國立臺灣科技大學</h4>
