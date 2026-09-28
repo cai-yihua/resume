@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>蔡宜樺 | AI 應用研究員</title>
+    <title>蔡宜樺 | AI-RAN 與 AI Agent 系統研究</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { font-family: 'Noto Sans TC', 'Inter', sans-serif; }
         @media print {
             .no-print { display: none; }
             body { font-size: 12px; }
+            section { page-break-inside: avoid; }
+            /* 深色區塊列印時翻白，避免整片黑 */
+            .bg-black, footer { background: #fff !important; color: #000 !important; }
+            .bg-black *, footer * { color: #000 !important; }
+            .bg-gray-200 { background: #fff !important; }
+            .border-gray-700, .border-gray-800 { border-color: #d4d4d4 !important; }
         }
     </style>
 </head>
@@ -20,7 +26,7 @@
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="font-medium">蔡宜樺</span>
             <div class="flex gap-6 text-sm">
-                <a href="index.html" class="text-gray-500 hover:text-black transition-colors">English</a>
+                <a href="resume_en.html" class="text-gray-500 hover:text-black transition-colors">English</a>
                 <a href="mailto:jess92725@gmail.com" class="text-gray-500 hover:text-black transition-colors">聯絡我</a>
             </div>
         </div>
@@ -29,116 +35,113 @@
     <!-- Hero Section -->
     <section class="pt-28 pb-16 px-6">
         <div class="max-w-5xl mx-auto">
-            <div class="flex items-start gap-8">
+            <div class="flex flex-col md:flex-row items-start gap-8">
                 <!-- Photo -->
                 <div class="flex-shrink-0">
-                    <img src="M11302167.jpg" alt="蔡宜樺" class="w-36 h-44 object-cover rounded-lg border border-gray-200">
+                    <img src="profile.jpg" alt="蔡宜樺" class="w-40 h-52 object-cover rounded-lg border border-gray-200">
                 </div>
                 <!-- Info -->
                 <div>
-                    <span class="text-sm text-gray-400 uppercase tracking-widest">AI Application Researcher</span>
+                    <span class="text-sm text-gray-400 uppercase tracking-widest">AI-RAN / O-RAN · AI Agent System Design</span>
                     <h1 class="text-5xl font-bold tracking-tight leading-tight mt-3 mb-5">
                         蔡宜樺
                     </h1>
                     <p class="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                        具備全端開發背景的 AI 應用研究員，專注於 <span class="text-black font-medium">意圖解析</span> 與 <span class="text-black font-medium">Agent 工作流設計</span>。主張「人決策、AI 執行」——透過結構化文件與規範驅動 AI 協作，讓人專注高價值決策，AI 加速精準產出。
+                        國立臺灣科技大學電子工程研究所碩士生，專注於 <span class="text-black font-medium">AI-RAN / O-RAN 智慧網路</span>與 <span class="text-black font-medium">AI Agent 系統設計</span>。目前的研究題目是讓 AI Agent 讀懂高階網路意圖，自動產出可部署到 Near-RT RIC 的控制策略，並在數位雙生環境驗證後才下發實網。具備工研院委託計畫、國科會計畫的核心開發經驗與兩次業界暑期實習。
                     </p>
                 </div>
+            </div>
+
+            <!-- 個人特質 -->
+            <div class="mt-12 border-l-2 border-black pl-6 max-w-4xl">
+                <h3 class="text-sm text-gray-400 uppercase tracking-widest mb-3">個人特質與專業風格</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    喜歡處理富有邏輯性或系統性的任務，願意接受挑戰、不斷嘗試新事物。性格小心謹慎，面對任務展現高專注度與細緻度，嚴格確保交付產出的精準度與架構品質。專業核心聚焦於<span class="text-black font-medium">系統架構規劃</span>與<span class="text-black font-medium">技術文件規範管理</span>，曾參與 6G AI/ML 平台技術文件標準制定、AI Agent 與後端軟體架構設計。具備微積分助教與專題生指導經驗，兼具嚴謹的邏輯思維與清晰耐心的跨團隊溝通協作能力。
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Core Value -->
-    <section class="py-16 px-6 bg-gray-50">
+    <section class="py-20 px-6 bg-gray-200">
         <div class="max-w-5xl mx-auto">
-            <div class="grid grid-cols-3 gap-8">
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-black">
+                <span class="text-sm text-gray-400 tracking-widest">01</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">核心能力</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <span class="text-sm text-gray-400 uppercase tracking-widest">01</span>
-                    <h2 class="text-xl font-semibold mt-2 mb-3">文件驅動 AI 開發</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">建立結構化文件（API 規格、DB Schema、Use Case），驅動 AI 精準產出可維護的模組化程式碼，1 小時內從需求到可運行應用。</p>
+                    <h2 class="text-xl font-semibold mt-2 mb-3">O-RAN 智慧網路開發</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">在 Near-RT RIC 上開發 xApp：透過 E2 介面讀取 KPM 指標、下達控制決策。能從零部署 O-RAN 測試環境（CU / DU / RU 與 RIC），並定位元件啟動與連線問題。</p>
                 </div>
                 <div>
                     <span class="text-sm text-gray-400 uppercase tracking-widest">02</span>
-                    <h2 class="text-xl font-semibold mt-2 mb-3">全端落地能力</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">具備從需求釐清、文件規劃、開發實作到自動化部署的端到端交付能力，涵蓋前端 (Next.js/React)、後端 (Django/FastAPI) 與 AI 部署 (Dify/n8n/Docker)。</p>
+                    <h2 class="text-xl font-semibold mt-2 mb-3">AI Agent 系統設計</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">設計多階段 Agent 工作流與工具調用契約，讓大型語言模型穩定產出可編譯、可部署的程式碼；並以黃金資料集評測結果回推 prompt 與功能劃分的修正。</p>
                 </div>
                 <div>
                     <span class="text-sm text-gray-400 uppercase tracking-widest">03</span>
-                    <h2 class="text-xl font-semibold mt-2 mb-3">AI 協作方法論</h2>
-                    <p class="text-gray-600 text-sm leading-relaxed">設計 Agent Prompt 工作流（意圖解析→工具調用→迭代優化），建立人機皆可讀的規範，確保 AI 產出穩定可控。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section class="py-16 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h3 class="text-sm text-gray-400 uppercase tracking-widest mb-8">教育背景</h3>
-            <div class="space-y-8">
-                <div class="grid grid-cols-12 gap-8 items-start">
-                    <div class="col-span-3">
-                        <span class="text-sm text-gray-500">2025/01 - 預計 2027/01</span>
-                    </div>
-                    <div class="col-span-9">
-                        <h4 class="text-xl font-semibold">國立臺灣科技大學</h4>
-                        <p class="text-gray-600 mt-1">電子工程系 碩士</p>
-                        <p class="text-gray-500 text-sm mt-2">MITLAB (呂政修教授) — 研究方向：AI 意圖解析與自動化工具調用，探索 Agent 如何正確識別使用者意圖並調用對應工具完成任務</p>
-                    </div>
-                </div>
-                <div class="grid grid-cols-12 gap-8 items-start">
-                    <div class="col-span-3">
-                        <span class="text-sm text-gray-500">2021/09 - 2025/01</span>
-                    </div>
+                    <h2 class="text-xl font-semibold mt-2 mb-3">系統交付與驗證</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">從架構圖、API 規格到容器化部署與自動化測試，能把系統連同文件一起交到別人手上。具備 Docker / K8s 部署經驗，並能以 Gherkin 把測試寫成「在什麼情況下、做了什麼、應該得到什麼」的行為情境，進行自動化 UI 與 E2E 驗證。</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience -->
-    <section class="py-16 px-6 bg-black text-white">
+    <section class="py-20 px-6 bg-black text-white">
         <div class="max-w-5xl mx-auto">
-            <h3 class="text-sm text-gray-400 uppercase tracking-widest mb-12">工作與研究經歷</h3>
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-white">
+                <span class="text-sm text-gray-500 tracking-widest">02</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">研究計畫經歷</h3>
+            </div>
 
-            <!-- ITRI -->
+            <!-- ITRI FY115 -->
             <div class="mb-16">
-                <div class="flex justify-between items-start mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
                     <div>
-                        <h4 class="text-2xl font-semibold">生成式 AI 專案開發人員</h4>
-                        <p class="text-gray-400 mt-1">工業技術研究院 (ITRI) — 產學合作</p>
+                        <h4 class="text-2xl font-semibold">意圖式韌性組網之智能生成策略</h4>
+                        <p class="text-gray-400 mt-1">工業技術研究院 (ITRI) 委託研究 — 台科大承接</p>
                     </div>
-                    <span class="text-sm text-gray-500">The Star Project</span>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">2026/04 - 2026/12（進行中）</span>
                 </div>
-                <p class="text-gray-400 text-sm mb-6">中途加入由 3 位學長建立的專案，後期獨立負責系統維護、功能開發與對外技術對接。主動提出架構優化方案，職責轉換期先規劃再討論確認方向。</p>
-                <div class="grid grid-cols-3 gap-6">
+                <p class="text-gray-400 text-sm mb-2 max-w-4xl">角色：AI Agent 系統架構設計、數位雙生模擬平台整合、策略生成工作流開發，以及架構圖、API 介面規格與資料結構定義等文件交付。</p>
+                <p class="text-gray-400 text-sm mb-6 max-w-4xl">計畫分兩階段：2026/07 交付基礎生成系統與驗證方案，2026/12 交付完整生成系統、驗證結果與效能評估報告；每兩週向工研院進行進度簡報。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="border border-gray-700 p-5">
-                        <h5 class="font-medium mb-2">自動化部署優化</h5>
-                        <p class="text-gray-400 text-sm mb-3">整合 5 項服務（Next.js、Django、Dify、n8n、PostgreSQL），設計一鍵部署腳本與簡潔部署文件，供工研院快速理解變更與操作步驟</p>
-                        <p class="text-sm"><span class="text-green-400">成效：</span>部署時間從 1 小時+ 縮短至 4 分鐘</p>
+                        <h5 class="font-medium mb-2">端到端 xApp 自動生成</h5>
+                        <p class="text-gray-400 text-sm mb-3">輸入高階網路意圖，輸出可部署於 Near-RT RIC 的控制應用程式。工作流涵蓋問題診斷、策略設計與程式碼生成三段，每段之間以結構化契約交接，任一段判斷不明確就中止，不讓錯誤分類往下游傳</p>
+                        <p class="text-sm"><span class="text-green-400">成果：</span>2026/07 如期完成第一階段交付</p>
                     </div>
                     <div class="border border-gray-700 p-5">
-                        <h5 class="font-medium mb-2">自動化測試</h5>
-                        <p class="text-gray-400 text-sm mb-3">以 Gherkin 語法拆解測試項目（Given/When/Then），搭配 Airtest 模擬前端使用者操作，驗證 UI 渲染與 E2E 流程，設計高解耦測試架構</p>
-                        <p class="text-sm"><span class="text-green-400">成效：</span>完成 29 個關鍵測試案例</p>
+                        <h5 class="font-medium mb-2">數位雙生驗證平台</h5>
+                        <p class="text-gray-400 text-sm mb-3">自行開發 xApp 生命週期控制平台（Django + PostgreSQL），同時管理實體與數位雙生兩套 O-RAN RIC 叢集。策略先在雙生環境部署、取 KPM 指標推演，達到當初設定的目標才下發實網</p>
+                        <p class="text-sm"><span class="text-green-400">成果：</span>網路調度決策可先驗證再上線</p>
                     </div>
                     <div class="border border-gray-700 p-5">
-                        <h5 class="font-medium mb-2">需求工程與 Agent 設計</h5>
-                        <p class="text-gray-400 text-sm mb-3">擔任技術窗口釐清工研院需求，在模組化架構中新增功能並維持解耦。設計 Agent Prompt 工作流（思維鏈降低幻覺、工具呼叫規範、上下文濃縮），透過迭代測試優化意圖解析準確度</p>
-                        <p class="text-sm"><span class="text-green-400">成效：</span>功能與成本雙贏，Agent 輸出穩定性顯著提升</p>
+                        <h5 class="font-medium mb-2">讓 LLM 的產出穩定可用</h5>
+                        <p class="text-gray-400 text-sm mb-3">建立生成結果的驗證機制：執行時只檢查「格式正確」與「下游跑不跑得動」，需要標準答案的判斷改以黃金資料集離線評分，再依評分報告回推該改 prompt 還是改功能劃分</p>
+                        <p class="text-sm"><span class="text-green-400">成果：</span>盤點 27 次重跑的觸發來源，其中 52% 來自三條後來判定「驗錯東西」的檢查，已移除</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">用量測決定要改什麼</h5>
+                        <p class="text-gray-400 text-sm mb-3">以封存的 137 筆執行紀錄量測端到端耗時（15–35 分鐘）與各段分佈，先確認瓶頸落在哪一段再動手，而不是憑感覺調整</p>
+                        <p class="text-sm"><span class="text-green-400">成果：</span>量到一個推論快取失效每輪多付 16.8% 成本並修正設定；改造後的端到端時間正在重新量測</p>
                     </div>
                 </div>
             </div>
 
-            <!-- NTUST -->
+            <!-- NSTC -->
             <div class="mb-16">
-                <div class="flex justify-between items-start mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
                     <div>
                         <h4 class="text-2xl font-semibold">技術負責人與文件架構師</h4>
-                        <p class="text-gray-400 mt-1">國立臺灣科技大學 — 國科會計畫</p>
+                        <p class="text-gray-400 mt-1">國科會 6G 前瞻計畫「開放式光/無線整合雛型系統 (3/4)」— 子計畫二：AI/ML 智能平台</p>
                     </div>
-                    <span class="text-sm text-gray-500">The Architect Project</span>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">2025/05 - 2026/07</span>
                 </div>
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="border border-gray-700 p-5">
                         <h5 class="font-medium mb-2">文件對齊與自動化分析</h5>
                         <p class="text-gray-400 text-sm">針對歷時 3-4 年的大型專案，重新規劃 User Story / Use Case，將散亂文件與程式碼對齊。開發 Python 腳本自動抓取模組化物件並分析物件間關係，自動生成時序圖，取代人工逐一追蹤</p>
@@ -150,17 +153,94 @@
                 </div>
             </div>
 
-            <!-- Teaching -->
+            <!-- ITRI FY114 -->
             <div>
-                <h4 class="text-xl font-semibold mb-3">教學與帶人經歷</h4>
-                <div class="grid grid-cols-2 gap-6 mt-4">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-4 gap-2">
                     <div>
-                        <h5 class="font-medium text-gray-300 mb-2">微積分助教</h5>
-                        <p class="text-gray-400 text-sm">建立標準化評分規範後再批改，提升效率與一致性，培養將複雜概念簡化輸出的教學能力</p>
+                        <h4 class="text-2xl font-semibold">意圖驅動組網管理系統</h4>
+                        <p class="text-gray-400 mt-1">工業技術研究院 (ITRI) 委託研究 — 晶片驅動 6G 通訊產業技術開發計畫．6G 全域韌性網管技術</p>
                     </div>
-                    <div>
-                        <h5 class="font-medium text-gray-300 mb-2">專題生指導</h5>
-                        <p class="text-gray-400 text-sm">與 2 位學長共同指導 3 位大三專題生（智慧衣櫃試穿系統，結合 Gemini）。採引導式教學：先以小目標學工具與團隊協作，再回頭理解文件規劃的重要性，讓學生從實作中建立思考框架</p>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">2025/03 - 2026/01</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-2 max-w-4xl"><a href="https://github.com/cai-yihua/ITRI-Intent-Based" class="underline hover:text-white transition-colors">github.com/cai-yihua/ITRI-Intent-Based</a> — 開源釋出（Apache-2.0）</p>
+                <p class="text-gray-400 text-sm mb-2 max-w-4xl">系統依 3GPP 意圖模型（Intent → IntentExpectation → ExpectationTarget，搭配 Context 限定生效範圍），把「要達成什麼」的高階需求轉成可量化目標，再由意圖執行引擎下發 SMO，並以閉環監控驗證是否達標；意圖轉譯以 LLM 為核心技術。</p>
+                <p class="text-gray-400 text-sm mb-6 max-w-4xl">中途加入由 3 位學長建立的專案，後期獨立負責專案版本管理、部署與系統整合、文件交付、系統維護與對外技術對接。主動提出架構優化方案，職責轉換期先規劃再討論確認方向。</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">自動化部署優化</h5>
+                        <p class="text-gray-400 text-sm mb-3">把前端、後端、Dify、n8n、PostgreSQL 等模組的安裝收斂成單一部署腳本：依序啟動基礎設施容器、核心服務容器與前後端，並自動完成服務註冊與工作流設定；組態全部外部化到 .env，讓同一套流程能重現於開發、測試與生產環境</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>部署時間從 1 小時+ 縮短至 4 分鐘</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">部署與維運流程規範</h5>
+                        <p class="text-gray-400 text-sm mb-3">撰寫軟體功能規格書的非功能規格章節，把部署拆成環境整備、原始碼取得與版本定位、系統組態、自動化執行、部署後驗證五個階段；維運面定義日常監控、組態變更管理、事件與問題管理（含根因分析）、更新修補與回滾計畫、備份還原與演練</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>交付後續維護者可直接依循的標準流程</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">部署後驗證</h5>
+                        <p class="text-gray-400 text-sm mb-3">定義三層驗收：服務可及性（UI 與 API 端點）、模組串接（各子系統的工作流與資源是否由腳本正確部署）、端到端功能測試（跑一筆完整意圖，驗證前端 → 後端 → 意圖轉換引擎 → 意圖執行引擎的資料流）</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>部署完成與否有明確判準，不靠人工目視</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">自動化測試</h5>
+                        <p class="text-gray-400 text-sm mb-3">以 Gherkin 語法拆解測試項目（在什麼情況下、做了什麼、應該得到什麼），搭配 Airtest 模擬前端使用者操作，驗證 UI 渲染與 E2E 流程，設計高解耦測試架構</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>完成 29 個關鍵測試案例</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">需求工程與意圖轉譯設計</h5>
+                        <p class="text-gray-400 text-sm mb-3">擔任技術窗口釐清工研院需求，在模組化架構中新增功能並維持解耦。意圖轉譯以 LLM 為核心，設計 Agent Prompt 工作流（思維鏈降低幻覺、工具呼叫規範、上下文濃縮），透過迭代測試優化意圖解析準確度</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>功能與成本雙贏，輸出穩定性顯著提升</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">Agent Prompt 設計方法論</h5>
+                        <p class="text-gray-400 text-sm mb-3">從這個專案整理出一套可重複的 Agent 設計流程：定義問題 → 拆解功能 → 規劃工具與步驟 → 制定規範指標 → 測試意圖解析與工具呼叫 → 不符預期則回溯調整 Prompt 與功能劃分</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>以結構化輸入取代反覆試誤，後續沿用到今年度計畫</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">版本發佈與開源合規</h5>
+                        <p class="text-gray-400 text-sm mb-3">以 git submodule 拆分 Backend / Dashboard 多倉庫結構，建立版本－里程碑對應表，逐版記錄主倉庫與兩個子模組的 tag 及變動項目；盤點全部第三方套件授權並以 Apache-2.0 對外釋出</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>2025/05 - 2026/01 共發佈 12 個版本（v1.0 → v4.1）</p>
+                    </div>
+                    <div class="border border-gray-700 p-5">
+                        <h5 class="font-medium mb-2">時序網路異常偵測</h5>
+                        <p class="text-gray-400 text-sm mb-3">以 LSTM 模型處理約 740MB 模擬時序資料，對網路狀態數據進行訓練與異常偵測</p>
+                        <p class="text-sm"><span class="text-green-400">成效：</span>模擬環境下達到 100% 異常偵測率</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-black">
+                <span class="text-sm text-gray-400 tracking-widest">03</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">實習與海外研習</h3>
+            </div>
+            <div class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-3">
+                        <span class="text-sm text-gray-500">2025/07 - 08、2026/07 - 08</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h4 class="text-xl font-semibold">獵戶科技</h4>
+                        <p class="text-gray-600 mt-1">暑期實習 — O-RAN 平台部署與機器學習模型上線流程</p>
+                        <p class="text-gray-500 text-sm mt-2">連續兩年暑期實習（每年 7/1 - 8/31）</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-3">
+                        <span class="text-sm text-gray-500">2026/06/22 - 06/24</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h4 class="text-xl font-semibold">韓國漢陽大學 6G 通訊研究中心</h4>
+                        <p class="text-gray-600 mt-1">AI 資通訊網路實作國際工作坊（進階班）· BEYOND-G 通訊實驗室</p>
+                        <ul class="text-gray-500 text-sm mt-3 space-y-2">
+                            <li><span class="text-black font-medium">O-RAN 環境從零部署</span>：模擬核心網路與 UE 流量，建立 CU / DU / RU 與 FlexRIC 連線，部署 xApp 即時觀測 KPM；掌握虛擬化元件的正確啟動順序與官方文件沒寫的除錯手法</li>
+                            <li><span class="text-black font-medium">數位雙生建置 (AODT)</span>：匯入真實建築 3D 模型、配置節點與 UE 移動軌跡與速度，模擬後透過視覺化介面判讀大量 KPM 數據，可用於基地台選址與覆蓋預測</li>
+                            <li><span class="text-black font-medium">技術判讀與成本意識</span>：釐清下達 E2SM-RC 控制指令的前置條件，以及 AI-for-RAN / AI-on-RAN / AI-and-RAN 的架構差異；也看到高擬真模擬對算力與特定廠商生態的依賴，是落地的真實門檻</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -168,81 +248,261 @@
     </section>
 
     <!-- Projects -->
-    <section class="py-16 px-6">
+    <section class="py-20 px-6 bg-gray-200">
         <div class="max-w-5xl mx-auto">
-            <h3 class="text-sm text-gray-400 uppercase tracking-widest mb-12">技術專案</h3>
-            <div class="grid grid-cols-3 gap-6">
-                <div class="border border-gray-200 p-6 hover:border-black transition-colors">
-                    <span class="text-xs text-gray-400 uppercase tracking-widest">Deep Learning</span>
-                    <h4 class="text-lg font-semibold mt-2 mb-3">時序網路異常偵測</h4>
-                    <p class="text-gray-600 text-sm mb-4">使用 LSTM 模型處理約 740MB 模擬時序資料，針對網路狀態數據進行訓練與異常偵測</p>
-                    <p class="text-sm font-medium">模擬環境下達到 100% 異常偵測率</p>
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-black">
+                <span class="text-sm text-gray-400 tracking-widest">04</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">技術專案</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border border-gray-300 p-6 hover:border-black transition-colors bg-white">
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Hackathon</span>
+                        <span class="text-xs text-gray-400">2026/07</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mt-2 mb-3">順風順水 FairWinds 借風</h4>
+                    <p class="text-gray-600 text-sm mb-4">2026 第一屆臺科青創創業黑客松參賽作品。負責租借平台前端介面規劃與元件開發，並設計 AI Agent 客服架構——以情境對話邏輯串接即時 FAQ 與狀態查詢，讓使用者不必等人工回覆</p>
+                    <p class="text-sm font-medium">前端架構 + Agent 客服設計</p>
                 </div>
-                <div class="border border-gray-200 p-6 hover:border-black transition-colors">
-                    <span class="text-xs text-gray-400 uppercase tracking-widest">RAG Application</span>
+                <div class="border border-gray-300 p-6 hover:border-black transition-colors bg-white">
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Healthcare</span>
+                        <span class="text-xs text-gray-400">2025/12 - 2026/07</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mt-2 mb-3">醫療管理系統</h4>
+                    <p class="text-gray-600 text-sm mb-4">協助修改錯誤與系統維運。導入 AI Agent 作為客服介面，把系統既有指令包成 agent 可調用的工具，使用者以自然語言即可觸發操作——不需要為每個需求新增 API 或前端頁面；並以 OpenClaw（開源自架 AI 助理）串接 Telegram Bot 作為指令入口</p>
+                    <p class="text-sm font-medium">以 Agent 串接指令，取代逐一開 API 與前端</p>
+                </div>
+                <div class="border border-gray-300 p-6 hover:border-black transition-colors bg-white">
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Automation Tool</span>
+                        <span class="text-xs text-gray-400">2024/09 - 2024/10</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mt-2 mb-3">黑臉專案</h4>
+                    <p class="text-gray-600 text-sm mb-4">超級布告欄結束後開的小專案。團隊進度監控工具，Django + Linebot API，以 Celery 定時排程自動盤點進度並推播提醒，替代人工催進度；規劃與實作進行到一半</p>
+                    <p class="text-sm font-medium">未完成的練習專案</p>
+                </div>
+                <div class="border border-gray-300 p-6 hover:border-black transition-colors bg-white">
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">RAG Application</span>
+                        <span class="text-xs text-gray-400">2023/05 - 2024/09</span>
+                    </div>
                     <h4 class="text-lg font-semibold mt-2 mb-3">超級布告欄</h4>
-                    <p class="text-gray-600 text-sm mb-4">3 人團隊擔任前端負責人與 GitHub 版本管理。基於 RAG 的校園公告系統，FastAPI + React，整合 LINE Bot 推播與 Celery 定時排程</p>
+                    <p class="text-gray-600 text-sm mb-4">3 人團隊擔任前端負責人與 GitHub 版本管理。基於 LLM / RAG 的校園公告系統，FastAPI + React，以正規表達式與 LLM 完成公告標籤化，整合 LINE Bot 推播與 Celery 定時排程，使用者可訂閱標籤第一時間收到通知</p>
                     <p class="text-sm font-medium">LLM 自動標籤化 + 自動推播提醒</p>
                 </div>
-                <div class="border border-gray-200 p-6 hover:border-black transition-colors">
-                    <span class="text-xs text-gray-400 uppercase tracking-widest">AI Methodology</span>
-                    <h4 class="text-lg font-semibold mt-2 mb-3">Agent Prompt 設計方法論</h4>
-                    <p class="text-gray-600 text-sm mb-4">建立系統化 Agent 設計流程：定義問題→拆解功能→規劃工具與步驟→制定規範指標→測試意圖解析與工具呼叫→不符預期則回溯調整 Prompt 與功能劃分</p>
-                    <p class="text-sm font-medium">結構化輸入取代大海撈針，產出穩定性顯著提升</p>
+                <div class="border border-gray-300 p-6 hover:border-black transition-colors bg-white">
+                    <div class="flex justify-between items-baseline">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">教育部學海築夢</span>
+                        <span class="text-xs text-gray-400">2024/06 - 2024/08</span>
+                    </div>
+                    <h4 class="text-lg font-semibold mt-2 mb-3">Shopify Theme 商家主題系統</h4>
+                    <p class="text-gray-600 text-sm mb-4">教育部學海築夢計畫的海外實作專案。透過 Shopify 為商家提供主題模板，商家購買後可自行設定多樣化選項：以 React 串接 Shopify 渲染前端網頁、TypeScript 完成後端功能、RESTful API 送出訂單資料；新增訂閱箱子功能，消費者可自由選擇加入的產品，商家能依不同標準判斷箱子上限</p>
+                    <p class="text-sm font-medium">模組化電商主題元件</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills -->
-    <section class="py-16 px-6 bg-gray-50">
+    <section class="py-20 px-6">
         <div class="max-w-5xl mx-auto">
-            <h3 class="text-sm text-gray-400 uppercase tracking-widest mb-12">專業技能</h3>
-            <div class="grid grid-cols-5 gap-6">
-                <div>
-                    <h4 class="font-semibold mb-4">AI Engineering</h4>
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-black">
+                <span class="text-sm text-gray-400 tracking-widest">05</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">核心專業技能</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border border-gray-200 p-6">
+                    <h4 class="font-semibold mb-4">次世代通訊與網路架構</h4>
                     <ul class="text-sm text-gray-600 space-y-2">
-                        <li>Prompt Engineering</li>
-                        <li>Least-to-Most, CoT</li>
-                        <li>AI Agents (Dify, n8n)</li>
-                        <li>RAG</li>
-                        <li>LLM APIs</li>
+                        <li>O-RAN 架構（Near-RT RIC, SMO）</li>
+                        <li>xApp / rApp 生命週期管理</li>
+                        <li>AI-RAN</li>
+                        <li>意圖驅動網路 (IBN)、3GPP 意圖模型</li>
+                        <li>數位雙生網路模擬驗證</li>
+                        <li>E2 介面 / KPM 指標讀取</li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Backend</h4>
+                <div class="border border-gray-200 p-6">
+                    <h4 class="font-semibold mb-4">AI、Agent 與 MLOps</h4>
                     <ul class="text-sm text-gray-600 space-y-2">
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>FastAPI</li>
-                        <li>RESTful APIs</li>
+                        <li>AI Agent 系統架構設計</li>
+                        <li>意圖解析、多代理協作、策略自動生成</li>
+                        <li>Prompt Engineering（CoT, Least-to-Most）</li>
+                        <li>RAG、LLM APIs、Dify、n8n</li>
+                        <li>模型容器化封裝、CI/CD 部署自動化</li>
+                        <li>Agent 評測（黃金資料集、評分架構）</li>
+                        <li>A2A agent 溝通協定</li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="font-semibold mb-4">DevOps</h4>
+                <div class="border border-gray-200 p-6">
+                    <h4 class="font-semibold mb-4">系統架構與文件管理</h4>
                     <ul class="text-sm text-gray-600 space-y-2">
-                        <li>Docker</li>
-                        <li>Kubernetes (Basic)</li>
-                        <li>Linux</li>
-                        <li>Git/GitHub</li>
-                        <li>CI/CD</li>
+                        <li>軟體與微服務架構設計</li>
+                        <li>系統技術文件規範管理</li>
+                        <li>User Story / Use Case 規劃</li>
+                        <li>PlantUML / Draw.io / Mermaid 建模</li>
+                        <li>API 規格書與部署手冊</li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Testing</h4>
+                <div class="border border-gray-200 p-6">
+                    <h4 class="font-semibold mb-4">後端與資料</h4>
                     <ul class="text-sm text-gray-600 space-y-2">
-                        <li>BDD (Gherkin)</li>
-                        <li>Airtest</li>
-                        <li>UI Testing</li>
-                        <li>E2E Testing</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Frontend</h4>
-                    <ul class="text-sm text-gray-600 space-y-2">
-                        <li>React.js</li>
-                        <li>Next.js</li>
+                        <li>Python (FastAPI, Django)</li>
                         <li>TypeScript</li>
+                        <li>SQL / PostgreSQL / Redis</li>
+                        <li>RESTful API 設計與對接</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="border border-gray-200 p-6">
+                    <h4 class="font-semibold mb-4">雲原生與維運</h4>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>Docker / Docker Compose</li>
+                        <li>Helm / kubectl</li>
+                        <li>Kubernetes (K8s)</li>
+                        <li>Linux / Ubuntu VM / WSL</li>
+                        <li>Apache &amp; Nginx 基本設定</li>
+                        <li>Git / GitHub、CI/CD、SSH</li>
+                    </ul>
+                </div>
+                <div class="border border-gray-200 p-6">
+                    <h4 class="font-semibold mb-4">前端與測試</h4>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>React.js / Next.js</li>
+                        <li>響應式 Web 應用規劃與實作</li>
+                        <li>BDD (Gherkin)、Airtest</li>
+                        <li>UI Testing、E2E Testing</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching -->
+    <section class="py-20 px-6 bg-gray-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-black">
+                <span class="text-sm text-gray-400 tracking-widest">06</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">教學、指導與文件管理</h3>
+            </div>
+            <div class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-3">
+                        <h4 class="font-semibold">6G AI/ML 平台技術文件規範管理</h4>
+                        <span class="text-sm text-gray-500">2026/04 - 迄今</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <p class="text-gray-600 text-sm leading-relaxed">制定並維護平台架構標準文件、API 規格書與系統部署手冊，確保工程團隊開發流程的一致性。</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-300 pt-8">
+                    <div class="md:col-span-3">
+                        <h4 class="font-semibold">微積分助教</h4>
+                        <span class="text-sm text-gray-500">2025/09 - 2026/01</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <p class="text-gray-600 text-sm leading-relaxed">負責習題講解、觀念釐清與課後輔導。建立標準化評分規範後再批改，提升效率與一致性，培養將複雜概念簡化輸出的教學能力。</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-300 pt-8">
+                    <div class="md:col-span-3">
+                        <h4 class="font-semibold">大學部專題生指導</h4>
+                        <span class="text-sm text-gray-500">2026/02 - 2027/01</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <p class="text-gray-600 text-sm leading-relaxed">碩一下至碩二上兩學期，與 2 位學長共同指導 3 位大三專題生。採引導式教學：先以小目標學工具與團隊協作，再回頭理解文件規劃的重要性；帶領學生建立系統架構的理解方式、進行程式碼審查與除錯邏輯培養。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-black">
+                <span class="text-sm text-gray-400 tracking-widest">07</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">教育背景</h3>
+            </div>
+            <div class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-3">
+                        <span class="text-sm text-gray-500">2025/09 - 預計 2027/01</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h4 class="text-xl font-semibold">國立臺灣科技大學</h4>
+                        <p class="text-gray-600 mt-1">電子工程研究所 碩士班</p>
+                        <p class="text-gray-500 text-sm mt-2">MITLAB (呂政修教授) — 研究方向：AI 意圖解析與自動化工具調用，探索 Agent 如何正確識別使用者意圖並調用對應工具完成任務；並以高擬真數位雙生驗證 AI 網路決策的精準度</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-200 pt-8">
+                    <div class="md:col-span-3">
+                        <span class="text-sm text-gray-500">2021/09 - 2025/06</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h4 class="text-xl font-semibold">國立臺灣科技大學</h4>
+                        <p class="text-gray-600 mt-1">電子工程系 學士</p>
+                        <ul class="text-gray-500 text-sm mt-2 space-y-1">
+                            <li>社團：112 學年度電子系學會財務長</li>
+                            <li>校內工讀：收發公文、辦公室內務處理、產學系統操作、協助貴賓接待</li>
+                            <li>課外活動：台科青年行動家論壇學員、台科崇德社志工（台南新營菁英品格科學營）、台科電子營生活輔導組幹部、教育部學海築夢計畫</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start border-t border-gray-200 pt-8">
+                    <div class="md:col-span-3">
+                        <span class="text-sm text-gray-500">2019/09 - 2021/06</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h4 class="text-xl font-semibold">國立臺南高級工業職業學校</h4>
+                        <p class="text-gray-600 mt-1">電子科</p>
+                        <p class="text-gray-500 text-sm mt-2">109 學年度全國高級中等學校工業類學生技藝競賽 工業電子 優勝第九名</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honors -->
+    <section class="py-20 px-6 bg-gray-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-black">
+                <span class="text-sm text-gray-400 tracking-widest">08</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">榮譽、檢定與修課</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white border border-gray-300 p-6">
+                    <h4 class="text-sm text-gray-400 uppercase tracking-widest mb-6">榮譽與競賽</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li>2026 第一屆臺科青創－創業黑客松 參賽（順風順水 FairWinds 借風）</li>
+                        <li>2024 TANET 臺灣網際網路研討會 海報論文錄取</li>
+                        <li>2024 聯發科技「智在家鄉」數位社會創新競賽 參賽</li>
+                        <li>110-1、110-2 學年度 書卷獎</li>
+                        <li>110-2 學年度 明偉企業獎學金</li>
+                        <li>109 學年度全國技藝競賽 工業電子 優勝第九名</li>
+                    </ul>
+                </div>
+                <div class="bg-white border border-gray-300 p-6">
+                    <h4 class="text-sm text-gray-400 uppercase tracking-widest mb-6">語文檢定</h4>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li>TOEIC 多益聽讀 670（2024/05/26）</li>
+                        <li>培力英檢 聽讀 B1+（2024/05/18）</li>
+                        <li>TOEIC 多益說寫 260（2022/06/12）</li>
+                    </ul>
+                </div>
+                <div class="bg-white border border-gray-300 p-6">
+                    <h4 class="text-sm text-gray-400 uppercase tracking-widest mb-6">代表修習課程</h4>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex justify-between"><span>數位信號處理實習</span><span class="text-gray-400">A+</span></li>
+                        <li class="flex justify-between"><span>混合雲平台技術實習</span><span class="text-gray-400">A+</span></li>
+                        <li class="flex justify-between"><span>邊緣運算與加速</span><span class="text-gray-400">A</span></li>
+                        <li class="flex justify-between"><span>數位信號處理之原理與應用</span><span class="text-gray-400">A</span></li>
+                        <li class="flex justify-between"><span>資料結構</span><span class="text-gray-400">A</span></li>
+                        <li class="flex justify-between"><span>網際網路與應用</span><span class="text-gray-400">A</span></li>
+                        <li class="flex justify-between"><span>嵌入式系統設計</span><span class="text-gray-400">A</span></li>
+                        <li class="flex justify-between"><span>嵌入式系統設計實習</span><span class="text-gray-400">A-</span></li>
                     </ul>
                 </div>
             </div>
@@ -250,17 +510,20 @@
     </section>
 
     <!-- Contact -->
-    <section class="py-16 px-6">
+    <section class="py-20 px-6 bg-black text-white">
         <div class="max-w-5xl mx-auto text-center">
-            <h3 class="text-sm text-gray-400 uppercase tracking-widest mb-6">聯絡方式</h3>
-            <div class="flex justify-center gap-8">
-                <a href="mailto:jess92725@gmail.com" class="text-gray-600 hover:text-black transition-colors">
-                    Email
+            <div class="flex items-baseline gap-4 pb-5 mb-12 border-b-2 border-white">
+                <span class="text-sm text-gray-500 tracking-widest">09</span>
+                <h3 class="text-2xl md:text-3xl font-bold tracking-tight">聯絡方式</h3>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a href="mailto:jess92725@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    jess92725@gmail.com
                 </a>
-                <a href="https://www.linkedin.com/in/%E5%AE%9C%E6%A8%BA-%E8%94%A1-055938307/" class="text-gray-600 hover:text-black transition-colors">
+                <a href="https://www.linkedin.com/in/%E5%AE%9C%E6%A8%BA-%E8%94%A1-055938307/" class="text-gray-400 hover:text-white transition-colors">
                     LinkedIn
                 </a>
-                <a href="https://github.com/cai-yihua" class="text-gray-600 hover:text-black transition-colors">
+                <a href="https://github.com/cai-yihua" class="text-gray-400 hover:text-white transition-colors">
                     GitHub
                 </a>
             </div>
@@ -268,10 +531,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-gray-100">
-        <div class="max-w-5xl mx-auto flex justify-between items-center text-sm text-gray-400">
-            <span>© 2025 蔡宜樺</span>
-            <span>人決策、AI 執行 — 透過結構化文件驅動 AI 協作，讓開發更精準高效</span>
+    <footer class="pb-12 px-6 bg-black text-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 text-sm text-gray-500 border-t border-gray-800 pt-8">
+            <span>© 2026 蔡宜樺</span>
+            <span>把高階網路意圖，變成可以部署、也可以驗證的控制策略</span>
         </div>
     </footer>
 </body>
