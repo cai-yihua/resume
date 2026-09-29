@@ -1,0 +1,5 @@
+# GitHub Pages 以 Jekyll 建置。以下檔案留在版控中，但不發佈到網站。
+exclude:
+  - cv_zh.html
+  - cv_en.html
+  - .gitignore

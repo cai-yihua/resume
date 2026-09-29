@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蔡宜樺 CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --ink:#111; --muted:#666; --line:#d8d8d8; --side:#f2f2f2; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Noto Sans TC','Inter',sans-serif; color:var(--ink); background:#9a9a9a; }
+  .page{ width:210mm; height:297mm; background:#fff; margin:16px auto; padding:10mm 11mm 9mm;
+         display:flex; flex-direction:column; }
+
+  header{ border-bottom:2px solid var(--ink); padding-bottom:4mm; margin-bottom:4mm; }
+  .name{ font-size:24pt; font-weight:700; letter-spacing:-.4pt; line-height:1.1; }
+  .name span{ font-size:13pt; font-weight:500; color:var(--muted); margin-left:8px; letter-spacing:0; }
+  .tagline{ font-size:9.5pt; color:var(--muted); margin-top:2.5mm; line-height:1.5; }
+
+  .cols{ display:flex; gap:6mm; flex:1; min-height:0; }
+  aside{ width:46mm; flex:0 0 46mm; }
+  main{ flex:1; min-width:0; }
+
+  h2{ font-size:8.5pt; font-weight:700; letter-spacing:1.2pt; text-transform:uppercase;
+      border-bottom:1px solid var(--ink); padding-bottom:1mm; margin-bottom:2.3mm; }
+  aside h2{ margin-top:4mm; }
+  aside h2:first-of-type{ margin-top:4mm; }
+  main section{ margin-bottom:2.9mm; }
+  main section:last-child{ margin-bottom:0; }
+
+  .photo{ width:34mm; aspect-ratio:160/208; object-fit:cover; display:block; }
+
+  .kv{ font-size:7.8pt; line-height:1.65; color:#333; word-break:break-all; }
+  .kv a{ color:#333; text-decoration:none; }
+
+  .skill{ margin-bottom:2.2mm; }
+  .skill b{ display:block; font-size:7.8pt; font-weight:700; margin-bottom:.6mm; }
+  .skill p{ font-size:7.6pt; line-height:1.5; color:#444; }
+
+  .mini{ font-size:7.6pt; line-height:1.55; color:#444; }
+  .mini li{ list-style:none; margin-bottom:1.4mm; padding-left:2.8mm; text-indent:-2.8mm; }
+  .mini li::before{ content:"·"; display:inline-block; width:2.8mm; color:#999; }
+
+  .item{ margin-bottom:2.3mm; }
+  .item:last-child{ margin-bottom:0; }
+  .row{ display:flex; justify-content:space-between; align-items:baseline; gap:4mm; }
+  .role{ font-size:10pt; font-weight:700; line-height:1.3; }
+  .date{ font-size:8pt; color:var(--muted); white-space:nowrap; }
+  .org{ font-size:8.5pt; color:var(--muted); margin:.5mm 0 1.2mm; }
+  ul.b{ font-size:8.2pt; line-height:1.45; }
+  ul.b li{ list-style:none; padding-left:3.4mm; text-indent:-3.4mm; margin-bottom:.7mm; }
+  ul.b li::before{ content:"▪"; display:inline-block; width:3.4mm; font-size:6pt; vertical-align:2px; color:#888; }
+  .desc{ font-size:8.3pt; line-height:1.45; color:#333; margin-bottom:1.1mm; }
+  .one{ font-size:8.5pt; line-height:1.5; color:#333; }
+
+  @page{ size:A4; margin:0; }
+  @media print{
+    body{ background:#fff; }
+    .page{ margin:0; box-shadow:none; }
+    a{ color:inherit; }
+  }
+  @media screen{ .page{ box-shadow:0 2px 20px rgba(0,0,0,.35); } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="name">蔡宜樺<span>Yi-Hua Cai (Jessi)</span></div>
+    <p class="tagline">以 AI Agent 將高階網路意圖自動轉譯為可部署的 O-RAN 控制策略。</p>
+  </header>
+
+  <div class="cols">
+    <aside>
+      <img class="photo" src="profile.jpg" alt="蔡宜樺">
+
+      <h2>聯絡方式</h2>
+      <div class="kv">
+        jess92725@gmail.com<br>
+        <a href="https://github.com/cai-yihua">github.com/cai-yihua</a>
+      </div>
+
+      <h2>專業技能</h2>
+      <div class="skill"><b>通訊網路</b><p>O-RAN、Near-RT RIC、xApp 生命週期、E2 / KPM、意圖驅動網路、3GPP 意圖模型</p></div>
+      <div class="skill"><b>AI 應用</b><p>AI Agent 架構設計、Prompt Engineering、RAG、LLM API、Dify、n8n</p></div>
+      <div class="skill"><b>開發</b><p>Python (FastAPI / Django)、TypeScript、React / Next.js、PostgreSQL、Redis、RESTful API</p></div>
+      <div class="skill"><b>部署與測試</b><p>Docker、Kubernetes、Helm、Linux、CI/CD、Git、Gherkin、Airtest</p></div>
+
+      <h2>語言</h2>
+      <ul class="mini">
+        <li>TOEIC 聽讀 670（2024）</li>
+        <li>TOEIC 說寫 260（2022）</li>
+        <li>培力英檢 BESTEP 聽讀 B1+（2024）</li>
+      </ul>
+
+      <h2>競賽與發表</h2>
+      <ul class="mini">
+        <li>2026 第一屆臺科青創－創業黑客松 參賽</li>
+        <li>TANET 2024 海報論文錄取</li>
+      </ul>
+
+      <h2>教學</h2>
+      <ul class="mini">
+        <li>微積分助教（2025/02 - 2025/06）</li>
+        <li>指導大學部專題生（2026/02 起）</li>
+      </ul>
+    </aside>
+
+    <main>
+      <section>
+        <h2>學歷</h2>
+        <div class="item">
+          <div class="row"><span class="role">國立臺灣科技大學　電子工程研究所 碩士</span><span class="date">2025/02 – 2027/02（預計）</span></div>
+          <p class="org">MITLAB．指導教授 呂政修</p>
+        </div>
+        <div class="item">
+          <div class="row"><span class="role">國立臺灣科技大學　電子工程系 學士</span><span class="date">2021/09 – 2025/01</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>研究計畫經歷</h2>
+
+        <div class="item">
+          <div class="row"><span class="role">意圖式韌性組網之智能生成策略</span><span class="date">2026/04 – 2026/12</span></div>
+          <p class="org">工業技術研究院 委託研究</p>
+          <p class="desc">以高階網路意圖為輸入，生成可部署於 Near-RT RIC 的控制應用程式。</p>
+          <ul class="b">
+            <li>設計三段式 AI Agent 工作流（問題診斷、策略設計、程式碼生成），將原本需同時具備通訊協定、框架實作與 AI 整合三種專長的開發整合為一條流程</li>
+            <li>串接數位雙生平台，使每項策略在下發實體網路前，先於模擬環境比對關鍵效能指標</li>
+            <li>建立產出檢查與自動迭代機制：以格式與規格的檢查結果回頭調整生成策略的 prompt，讓 xApp 產出品質逐輪收斂</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="row"><span class="role">意圖驅動組網管理系統</span><span class="date">2025/03 – 2026/01</span></div>
+          <p class="org">工業技術研究院 委託研究</p>
+          <p class="desc">將接近自然語言描述的網路目標，轉換為可執行的網路設定。</p>
+          <ul class="b">
+            <li>把整套系統（前端、後端、工作流引擎與資料庫）的安裝收斂為單一部署腳本，部署時間自 1 小時以上縮短至 4 分鐘，供合作單位交接與驗收</li>
+            <li>制定部署與維運規範，定義服務可用、模組串接、端到端流程三層驗收標準</li>
+            <li>以 Gherkin 情境模擬實際使用者操作，完成 29 個關鍵測試案例</li>
+            <li>管理專案版本與變更紀錄，使每一版的功能範圍與變更項目皆可追溯</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="row"><span class="role">6G 前瞻計畫：AI/ML 智能平台</span><span class="date">2025/05 – 2026/07</span></div>
+          <p class="org">國科會「開放式光／無線整合雛型系統」</p>
+          <p class="desc">開放式網路架構下的 AI/ML 智能平台。</p>
+          <ul class="b">
+            <li>重整 3-4 年專案的 Use Case，並開發 Python 腳本自動從模組呼叫關係生成時序圖，加速流程層級的除錯</li>
+            <li>重新設計 CI/CD 工作流規範，並清理既有環境中過時的設定與資料（Harbor 映像倉庫、GitLab 專案），為後續導入留下乾淨的基礎</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>技術專案</h2>
+        <div class="item">
+          <div class="row"><span class="role">醫療管理系統</span><span class="date">2025/12 – 2026/07</span></div>
+          <ul class="b">
+            <li>加入 AI Agent 客服層，將既有 API 指令組合成可調用的工具，使用者以自然語言完成查詢與操作；同時負責問題修正與維運</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="row"><span class="role">超級布告欄</span><span class="date">2023/05 – 2024/09</span></div>
+          <ul class="b">
+            <li>基於 RAG 的校園公告系統，以 LLM 自動標籤化並即時推播；三人團隊中擔任前端負責人與版本管理</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="row"><span class="role">順風順水 FairWinds 借風</span><span class="date">2026/07</span></div>
+          <ul class="b">
+            <li>電風扇租借平台：負責前端介面規劃與元件開發，並設計 AI Agent 客服流程，即時處理常見問題與租借狀態查詢</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>海外研習與實作</h2>
+        <div class="item">
+          <div class="row"><span class="role">漢陽大學 6G 國際工作坊（進階班）</span><span class="date">2026/06</span></div>
+          <p class="one">從零部署 CU / DU / RU 與 RIC 環境，並以 xApp 觀測關鍵效能指標。</p>
+        </div>
+        <div class="item">
+          <div class="row"><span class="role">Shopify 商家主題系統（教育部學海築夢）</span><span class="date">2024/06 – 2024/08</span></div>
+          <p class="one">以 React 與 TypeScript 開發模組化電商主題元件，並串接訂單 API。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>
